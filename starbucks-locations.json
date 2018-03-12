@@ -1,0 +1,32 @@
+{
+    "Chelsea":{
+        "Address": "450 W 15th Street, New York, NY 10014",
+        "Coordinates": "",
+        "Name": "Chelsea"
+    },
+    "Bryant Park":{
+        "Address": "54 W 40th Street, New York, NY 10018",
+        "Coordinates": "",
+        "Name": "Bryant Park"
+    },
+    "Grand Central Place":{
+        "Address": "60 E 42nd Street, Suite 140, New York, NY 10165",
+        "Coordinates": "",
+        "Name": "Grand Central Place"
+    },
+    "Rockefeller Center":{
+        "Address": "1 Rockefeller Plaza, Suite D, New York,NY 10020",
+        "Coordinates": "",
+        "Name": "Rockefeller Center"
+    },
+    "Midtown East":{
+        "Address": "10 E 53rd Street, New York, NY 10022",
+        "Coordinates": "",
+        "Name": "Midtown East"
+    },
+    "Clinton Street":{
+        "Address": "71 Clinton Street, New York, NY 10002",
+        "Coordinates": "",
+        "Name": "Clinton Street"
+    }
+}

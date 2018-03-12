@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="http://cdn.mapfit.com/v1/assets/css/mapfit.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./reset.css">
+        <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body class="container-fluid h-100 d-flex flex-column">
+        <div  id="top-bar" class ="row">
+            <div class = "col-sm-12 col-lg-12 col-md-12"><img src ="./images/pngs/coffee-Icon.png" width = "30px" /><h1 id="top-bar-text">Coffee Shop Locations</h1><img src="./images/pngs/mapfit-logo.png" width = "30px" align="right"/></div>
+        </div>
+        <div class = "row h-100">
+            <div class="col-sm-4 col-lg-4 col-md-4"><ul id="location-list"></ul></div>
+            <div id="mapfit" class="col-sm-8 col-lg-8 col-md-8"></div>
+        </div>
+        <script src="https://cdn.mapfit.com/v2/assets/js/tetragon.js"></script>
+        <script src="http://cdn.mapfit.com/v2/assets/js/mapfit.js"></script>
+        <script src="store-locator.js"></script>
+    </body>
+</html>

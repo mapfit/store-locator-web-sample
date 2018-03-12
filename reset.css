@@ -1,0 +1,107 @@
+@font-face{
+    font-family: Aktiv Grotesk;
+    src: url('./fonts/AktivGroteskBold.ttf') format('truetype');
+    font-weight:  bold;
+  }
+  
+  @font-face{
+    font-family: Aktiv Grotesk;
+    src: url('./fonts/AktivGrotesk.ttf') format('truetype') ;
+    font-weight: normal;
+  }
+  
+  @font-face{
+  
+    font-family: Aktiv Grotesk;
+    src: url('./fonts/AktivGroteskLight.ttf') format('truetype') ;
+    font-weight: 100;
+  
+  }
+  
+  @font-face{
+      font-family: Aktiv Grotesk;
+      src: url('./fonts/AktivGroteskMediumItalic.ttf') format('truetype') ;
+      font-weight: normal;
+      font-style: italic;
+  }
+  
+  @font-face{
+      font-family: Aktiv Grotesk;
+      src: url('./fonts/AktivGroteskMedium.ttf') format('truetype') ;
+      font-weight: 500;
+  }
+  
+  @font-face{
+      font-family: Aktiv Grotesk;
+      src: url('./fonts/AktivGroteskLightItalic.ttf') format('truetype') ;
+      font-weight: 100;
+      font-style: italic;
+  }
+
+li{
+    list-style: none;
+}
+
+html,body,{
+    height: 100%;
+    width: 100%;
+    font-family: Aktiv Grotesk;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Harmonia;
+    font-weight: bold;
+}
+
+
+
+
+#mapfit{
+    width: 100%;
+    height: 100%;
+}
+
+#top-bar{
+    padding: 1.7% 2%;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+#top-bar-text{
+    font-size: 17px;
+    color: #444d5b;
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+}
+
+img:first-of-type{
+    margin-right: 2%;
+}
+
+ul {
+    overflow: auto;
+}
+
+ul > li {
+    padding: 5% 0;
+
+}
+
+ul > li > h2{
+    font-size: 17px;
+    color: #444d5b;
+}
+
+ul> li > p{
+    color: #808a98;
+    font-size: 14px;
+}
+
+
+
+input[type="text"]{
+    width: 100%;
+    border: #d5d9dd;
+}
