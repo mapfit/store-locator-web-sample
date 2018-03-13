@@ -62,10 +62,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #top-bar{
-    padding: 0 2%;
+    padding: 0 3.5rem;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
-    height: 9.2%;
-    
+    height: auto;
 }
 
 #top-bar-text{
@@ -75,6 +74,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #logo-bar{
     padding: 1.7% 0;
+    height: auto;
 }
  
 
@@ -86,8 +86,8 @@ img{
 }
 
 img:first-of-type{
-    margin-right: 2%;
-
+    margin-right: 2rem;
+    margin-bottom:  0.55rem
 }
 
 ul {
@@ -120,7 +120,7 @@ input[type="text"]{
 
 @media (max-width: 992px){
     #mapfit{
-        height: 50%;
+        height: 60%;
     }
     
 }

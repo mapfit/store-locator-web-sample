@@ -43,7 +43,11 @@ document.addEventListener('DOMContentLoaded', function(){
                 locationListMobile.appendChild(listItemMobile);
                 let marker = mapfit.Marker();
                 let icon = mapfit.Icon();
-                icon.setIconUrl('cafe')
+                icon.setIconUrl('./images/pngs/custom.png')
+                icon.setWidth(38);
+                icon.setHeight(56);
+                icon.setAnchorWidth(19)
+                icon.setAnchorHeight(52)
                 let placeInfo = mapfit.PlaceInfo();
                 placeInfo.setTitle(`<h3>${locs[element].Name}</h3>`);
                 placeInfo.setDescription(`<p>${locs[element].Address}</p>`);
