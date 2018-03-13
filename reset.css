@@ -62,8 +62,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #top-bar{
-    padding: 1.7% 2%;
+    padding: 0 2%;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+    height: 9.2%;
+    
 }
 
 #top-bar-text{
@@ -71,13 +73,21 @@ h1,h2,h3,h4,h5,h6{
     color: #444d5b;
     display: inline-block;
 }
+#logo-bar{
+    padding: 1.7% 0;
+}
+ 
+
+
 
 img{
     display: inline-block;
+
 }
 
 img:first-of-type{
     margin-right: 2%;
+
 }
 
 ul {
@@ -101,7 +111,16 @@ ul> li > p{
 
 
 
+
+
 input[type="text"]{
     width: 100%;
     border: #d5d9dd;
+}
+
+@media (max-width: 992px){
+    #mapfit{
+        height: 50%;
+    }
+    
 }
