@@ -74,7 +74,7 @@ html{
 }
 
 #top-bar{
-    padding: 0 5.9%;
+    padding: 0 2.75%;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
     height: auto;
 }
@@ -137,7 +137,7 @@ ul {
 }
 
 ul > li {
-    padding: 5% 10%;
+    padding: 5% 8%;
 
 }
 
