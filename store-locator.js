@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     map = L.MapView('mapfit')
     map.drawMap();
     map.setRecenterButtonEnabled(true);
-    map.setCenter([40.714997, -73.985367])
+    map.setCenter([40.714997, -73.985367], 0)
     map.setZoom(13);
     let locationList = document.getElementById('location-list')
     let locationListMobile = document.getElementById('location-list-mobile')
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // icon.setHeight(56);
         // icon.setAnchorWidth(19)
         // icon.setAnchorHeight(52)
-        let placeInfo = mapfit.PlaceInfo();
+        let placeInfo = mapfit.PlaceInfo({offset: [0,]});
         placeInfo.setTitle(`<h3 id="infoHeader">${locs[element].Name}</h3>`);
         placeInfo.setDescription(`<p id="infoDescription">${locs[element].Address}</p>`);
         placeInfo.enableDirectionsButton(true);
@@ -112,6 +112,11 @@ document.addEventListener('DOMContentLoaded', function(){
         marker.setIcon(icon);
         marker.address = locs[element].Address;
         marker.setPlaceInfo(placeInfo);
+
+        marker.on("click",function(){
+            let mPos = marker.getPosition();
+            map.setCenter([mPos.lat, mPos.lng], 0)
+        })
         listItem.addEventListener("click",function(){
             marker.fire('click');
         })
