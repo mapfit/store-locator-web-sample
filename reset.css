@@ -38,6 +38,20 @@
       font-style: italic;
   }
 
+  @font-face{
+    font-family: Harmonia;
+    src: url('./fonts/HarmoniaBold.ttf') format('truetype') ;
+    font-weight: bold;
+  }
+
+  @font-face{
+    font-family: Harmonia;
+    src: url('./fonts/HarmoniaSansStd-SemiBd.otf') format('opentype') ;
+    font-weight: 600;
+  }
+
+
+
 li{
     list-style: none;
 }
@@ -154,7 +168,8 @@ ul > li > h1{
 ul> li > p{
     color: #808a98;
     font-size: 14px;
-    
+    font-family: Harmonia;
+    font-weight: 600;
 }
 
 
