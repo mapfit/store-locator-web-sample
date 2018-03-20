@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function(){
     map.setZoom(13);
     let locationList = document.getElementById('location-list')
     let locationListMobile = document.getElementById('location-list-mobile')
+    let gitLink = document.getElementById('git-link')
+    let gitLinkInfo = document.getElementById('git-link-info')
     let company;
     let locs = {
         "Chelsea":{
@@ -69,6 +71,22 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
     }
+
+    var timerId;
+    gitLink.addEventListener("mouseover", function(){
+        gitLink.src = "./images/pngs/gitHover.png"
+        timerId = window.setTimeout(function(){
+                    gitLinkInfo.style.display = "block";
+                  },1500);
+        
+    })
+
+    gitLink.addEventListener("mouseout", function(){
+        gitLink.src = "./images/pngs/gitRegular.png"
+        window.clearTimeout(timerId);
+        gitLinkInfo.style.display = "none";
+    })
+   
 
 
     for(let element in locs){
@@ -132,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function(){
         locationListMobile.appendChild(listItemMobile);
     }
 
+   
    
     
 })

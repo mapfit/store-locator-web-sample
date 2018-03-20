@@ -41,7 +41,7 @@
   @font-face{
     font-family: Harmonia;
     src: url('./fonts/HarmoniaBold.ttf') format('truetype') ;
-    font-weight: bold;
+    font-weight: 700;
   }
 
   @font-face{
@@ -68,9 +68,17 @@ html,body,{
 
 
 
+
+
 h1,h2,h3,h4,h5,h6{
-    font-family: Harmonia;
-    font-weight: bold;
+    font-family: Harmonia !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px;
+}
+
+h1{
+    font-family: Harmonia !important;
+    font-weight: 700 !important;
     letter-spacing: 0.5px;
 }
 
@@ -219,6 +227,27 @@ ul> li > p{
 /* .leaflet-popup.leaflet-zoom-animated{
     margin: 5px !important;
 } */
+
+
+#git-link{
+    position: absolute;
+    z-index: 600;
+    right: 16px;
+    top: 7rem;
+}
+
+#git-link:hover{
+    cursor: pointer;
+}
+
+#git-link-info{
+    display: none;
+    position: absolute;
+    z-index: 600;
+    right: 55px;
+    top: 8rem;
+    color: #95979a
+}
 
 #recenterIcon{
     box-shadow: 0 3px 10px 0 rgba(19, 40, 54, 0.15) !important;
