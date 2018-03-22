@@ -72,19 +72,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     }
 
-    var timerId;
     gitLink.addEventListener("mouseover", function(){
         gitLink.src = "./images/pngs/gitHover.png"
-        timerId = window.setTimeout(function(){
-                    gitLinkInfo.style.display = "block";
-                  },1500);
         
     })
 
     gitLink.addEventListener("mouseout", function(){
         gitLink.src = "./images/pngs/gitRegular.png"
-        window.clearTimeout(timerId);
-        gitLinkInfo.style.display = "none";
     })
    
 
@@ -102,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function(){
         // icon.setHeight(56);
         // icon.setAnchorWidth(19)
         // icon.setAnchorHeight(52)
-        let placeInfo = mapfit.PlaceInfo({offset: [0,]});
-        placeInfo.setTitle(`<h3 id="infoHeader">${locs[element].Name}</h3>`);
-        placeInfo.setDescription(`<p id="infoDescription">${locs[element].Address}</p>`);
+        let placeInfo = mapfit.PlaceInfo();
+        placeInfo.setTitle(`${locs[element].Name}`);
+        placeInfo.setDescription(`${locs[element].Address}`);
         placeInfo.enableDirectionsButton(true);
 
         map.options.mapObject.on("popupopen popupclose",function(e){
@@ -131,9 +125,11 @@ document.addEventListener('DOMContentLoaded', function(){
         marker.address = locs[element].Address;
         marker.setPlaceInfo(placeInfo);
 
-        marker.on("click",function(){
-            let mPos = marker.getPosition();
-            map.setCenter([mPos.lat, mPos.lng], 0)
+        marker.on("click",function(e){
+            let mPos = e.sourceTarget._latlng;
+            map.options.mapObject.flyTo([mPos.lat, mPos.lng],16);
+            
+            
         })
         listItem.addEventListener("click",function(){
             marker.fire('click');
