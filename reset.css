@@ -177,9 +177,12 @@ ul> li > p{
     font-family: Harmonia;
     font-weight: 600;
 }
+#side-box{
+    box-shadow: 2px 7px 8px 0 rgba(0, 0, 0, 0.12);
+    overflow: auto;
+}
 
-
-#side-box, #side-box-mobile{
+#side-box-mobile{
     box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.12);
     overflow: auto;
 }
@@ -298,6 +301,8 @@ ul> li > p{
 
 .mapfit-goBtn > a{
     font-size: 12px;
+    font-family: Harmonia;
+    font-weight: 700;
 }
 
 .mapfit-goBtn > a:hover{

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
             "Name": "Bryant Park"
         },
         "Grand Central Place":{
-            "Address": "60 E 42nd Street, Suite 140, New York, NY 10165",
+            "Address": "60 E 42nd Street, New York, NY 10165",
             "Coordinates": "",
             "Name": "Grand Central Place"
         },
