@@ -257,11 +257,11 @@ ul> li > p{
     
 }
 
-#popUpContent{
+.mapfit-popUpContent{
     padding: 14px 16px;
 }
 
-#popUpContent > h1{
+.mapfit-popUpContent > h1{
   font-size: 13px;
   font-weight: 700;
   font-style: normal;
@@ -272,11 +272,38 @@ ul> li > p{
   color: #3a3e43;
   margin-bottom: 0 !important;
 }
-#popUpContent > p{
+.mapfit-popUpContent > p{
     margin-top: 8px;
     margin-bottom: 2px;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: #535658;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
 }
 
+.mapfit-popUpContent .mapfit-popup-header{
+    margin-bottom: 0px;
+    color: #3a3e43;
+}
+
+.mapfit-goBtn{
+    padding-top: 18px;
+}
+
+.mapfit-goBtn > a{
+    font-size: 12px;
+}
+
+.mapfit-goBtn > a:hover{
+    text-decoration: none;
+    color: white;
+}
 
 
 #mapfit-show-directions-new-window{
