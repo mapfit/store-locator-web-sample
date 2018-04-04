@@ -10,6 +10,10 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 #static 
 ADD . /usr/share/nginx/html/
+RUN cd /usr/share/nginx/html/ &&\
+    rm -v default.conf &&\
+    rm -v nginx.conf &&\
+    rm -v .dockerignore
 
 # this is for virtual host purposes
 EXPOSE 80
