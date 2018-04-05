@@ -1,8 +1,8 @@
 let map;
 
 document.addEventListener('DOMContentLoaded', function(){
-    
-    L.apikey = '591dccc4e499ca0001a4c6a423229dd9f27f4b999d8353e974feb679';
+
+    L.apikey = 'YOUR_API_KEY';
     map = L.MapView('mapfit')
     map.drawMap();
     map.setRecenterButtonEnabled(true);
