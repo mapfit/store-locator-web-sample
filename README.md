@@ -1,4 +1,4 @@
-![alt text](https://github.com/mapfit/store-locator-iOS-sample/blob/master/StoreLocator-JS.png)
+![alt text](https://github.com/mapfit/store-locator-web-sample/blob/master/StoreLocator-JS.png)
 
 # Store Locator Sample Project
 This sample project is made to demonstrate the usage of [Mapfit JS](https://mapfit.com/developers/javascript). In the project, 10 addresses are listed and drawn on the map.
