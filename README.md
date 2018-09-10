@@ -10,7 +10,7 @@ This sample project is made to demonstrate the usage of [Mapfit JS](https://mapf
 - Scrollable list view that corresponds with markers using event listeners.
 
 ## Requirements
-You will need to obtain Mapfit API key to run the project. You can get it [here](https://mapfit.com/getstarted).
+You will need to obtain Mapfit API key to run the project. You can get it [here](https://dash.mapfit.com/admin/signup).
 
 ## What's next?
 To learn more about the capabilities of Mapfit JS, take a look at the [documentation](https://javascript.mapfit.com).
